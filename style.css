@@ -396,7 +396,6 @@ ul li a {
 
 /* OUR PRODUCT */
 .our-product {
-  /* margin: 1em; */
   padding: 1em;
   text-align: center;
   min-height: 100vh;
@@ -777,7 +776,7 @@ ul li a {
   }
 
   .homepage {
-    margin: 5.5em .5em 0 .5em;
+    margin: 1.5em .5em 0 .5em;
   }
 
   .homepage-heading {
@@ -798,7 +797,8 @@ ul li a {
   }
 
   .page-images {
-    height: 50vh;
+    /* height: 50vh; */
+    height: 342px;
     /* width: 100% */
   }
 
@@ -837,8 +837,183 @@ ul li a {
     margin: 0 1em;
   }
 
-  .product-lists {
-    /* width: 80%; */
+  .product-lists, .join-league {
     margin: 0 2em;
+  }
+
+  .our-partner {
+    margin: 0 2em;
+    padding: 1em;
+  }
+
+  .testimonial-wording, .faq-wording {
+    font-size: 1.1rem;
+    margin-top: 0 1.5em;
+  }
+
+  .qusans h5 {
+    font-size: 1rem;
+  }
+
+  .anwser-box {
+    font-size: .9rem;
+  }
+
+  .bottom {
+    text-align: center;
+    padding: 2.5em;
+  }
+
+  .social-links {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .homepage {
+    padding: 1em 3em;
+  }
+
+  .home-page-wordings {
+    font-size: 1.2rem;
+    margin: 0 2.5em .5em 2.5em;
+  }
+
+  .school-list {
+    font-size: 1rem;
+    padding: .5em;
+  }
+
+  .marquee {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
+
+  .user-count {
+    /* margin: 2em; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding:1.5em;
+  }
+
+  .user-text {
+    margin: 0 1.5em;
+  }
+
+  .count-boxes {
+    padding: 0 2em;
+  }
+
+  .count-text {
+    font-size: 1.1rem;
+  }
+
+  .unique-value {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  .unique-heading,
+  .product-heading,
+  .partner-heading,
+  .faq-heading {
+    font-size: 2.2rem;
+  }
+
+  .unique-wording,
+  .product-wording,
+  .faq-wording {
+    font-size: 1rem;
+    margin: .5em 5.5em;
+    font-weight: 400;
+  }
+
+  .unique-box {
+    margin: 1.5em 6em;
+  }
+
+  .our-product {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product-lists {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .join-league, .our-partner, .faq, .map, .bottom {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  .join-league h1 {
+    font-size: 4rem;
+  }
+
+  .marquee-2 {
+    width:80%;
+    margin-top: 1em;
+  }
+
+  .testimonial {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0em;
+  }
+
+  .list-wording {
+    font-size: 1rem;
+  }
+
+  .testimonial-lists {
+    height: 50vh;
+  }
+
+  .faq-question {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  .bottom-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: .5em;
+    text-align: left;
+    font-size: .7rem;
+  }
+
+  .links {
+    align-items: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .page-image, .page-images {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .homepage-heading {
+    font-size: 4rem;
+  }
+
+  .school-list {
+    font-size: 1.1rem;
+  }
+
+  .list-wording {
+    font-size: 1.1rem;
+    padding: 1.5em;
+  }
+
+  .testimonial-lists {
+    height: 55vh;
   }
 }
