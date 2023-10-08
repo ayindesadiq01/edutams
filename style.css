@@ -504,7 +504,7 @@ ul li a {
   margin-top: .5em;
   padding: .5em;
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #d6ffd1;
   background-image: url('./bg\ pattern.png');
   background-blend-mode:screen;
