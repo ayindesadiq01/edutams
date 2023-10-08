@@ -150,7 +150,7 @@ ul li a {
 .homepage {
   min-height: 100vh;
   color: black;
-  margin: 2em .5em 0 .5em;
+  margin: 0 .5em 0 .5em;
   padding: .5em;
   text-align: center;
 
@@ -177,13 +177,12 @@ ul li a {
 }
 
 .home-page-wordings {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 .homepage-left .schools {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* display: flex; */
   font-size: .8rem;
   padding: .2em;
 }
@@ -205,11 +204,10 @@ ul li a {
   justify-content: center;
   align-items: center;
   order:1;
-  margin-bottom: 3em;
-  /* margin: 0 auto; */
 }
+
 .page-images {
-  height: 40vh;
+  min-height: 40vh;
   width: 90%;
 
   background-color: grey;
@@ -220,7 +218,7 @@ ul li a {
 
 .page-image {
   width: 100%;
-  height: 40vh;
+  height: 400px;
 
   display: flex;
   justify-self: center;
@@ -269,7 +267,7 @@ ul li a {
 }
 
 .user-text {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .user-text span {
@@ -282,7 +280,7 @@ ul li a {
   display: flex;
   flex-direction: column;
   text-align: right;
-  margin-top: 1em;
+  margin-top: .5em;
 }
 
 .count-box {
@@ -404,7 +402,7 @@ ul li a {
 .product-links {
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .product-link {
@@ -502,6 +500,7 @@ ul li a {
 /* OUR PARTNERS */
 .our-partner {
   margin: 1em;
+  margin-top: .5em;
   padding: .5em;
   text-align: center;
   min-height: 100vh;
@@ -523,7 +522,7 @@ ul li a {
 }
 
 .testimonial {
-  margin-top: 2em;
+  margin-top: .5em;
   position: relative;
 }
 
@@ -538,12 +537,12 @@ ul li a {
 
 .testimonial-wording {
   font-size: .9rem;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 .testimonial-lists {
   width: 100%;
-  height: 60vh;
+  height: 45vh;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -616,9 +615,10 @@ ul li a {
 /* FAQ */
 .faq {
   margin: 1em;
+  margin-bottom: 0%;
   padding: .5em;
   text-align: center;
-  min-height: 100vh;
+  min-height: 40vh;
 }
 
 .faq-question {
