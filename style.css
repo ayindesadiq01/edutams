@@ -397,7 +397,6 @@ ul li a {
 .our-product {
   padding: 1em;
   text-align: center;
-  /* min-height: 100vh; */
 }
 
 .product-links {
@@ -796,14 +795,9 @@ ul li a {
     margin-bottom: 1em;
   }
 
-  .page-images {
-    /* height: 50vh; */
+  .page-images, .page-image, .student-image {
     height: 342px;
-    /* width: 100% */
-  }
-
-  .page-image {
-    height: 50vh;
+    width: 100%;
   }
 
   .marquee {
@@ -892,7 +886,6 @@ ul li a {
   }
 
   .user-count {
-    /* margin: 2em; */
     width: 90%;
     margin: 0 auto;
     margin-top: 1em;
@@ -971,10 +964,6 @@ ul li a {
     font-size: 1rem;
   }
 
-  .testimonial-lists {
-    height: 50vh;
-  }
-
   .faq-question {
     width: 80%;
     margin: 0 auto;
@@ -995,8 +984,8 @@ ul li a {
 }
 
 @media (min-width: 800px) {
-  .page-image, .page-images {
-    height: 70vh;
+  .page-image, .page-images, .student-image {
+    height: 400px;
     width: 100%;
   }
 
