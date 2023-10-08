@@ -765,6 +765,11 @@ ul li a {
   text-align: center;
 }
 
+/* Map */
+.map {
+  height: 300px;
+}
+
 @media (min-width: 500px) {
   .container {
     padding: 1em;

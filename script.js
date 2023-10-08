@@ -316,3 +316,25 @@ faqQuestion.addEventListener('click', e => {
 
 
 // WORKING ON MAP
+if(navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(position){
+    console.log(position)
+    // Setting Posiion
+    const latitude = 7.1671921;
+    const longtitude = 3.3599765;
+    const coord = [latitude, longtitude];
+
+    const map = L.map('map').setView(coord, 13);
+
+    // Display of Map
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // Setting a marker]
+    L.marker(coord).addTo(map);
+  }, function(){
+    alert('Could not get current location')
+  })
+}
