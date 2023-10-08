@@ -397,7 +397,7 @@ ul li a {
 .our-product {
   padding: 1em;
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .product-links {
