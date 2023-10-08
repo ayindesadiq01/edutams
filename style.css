@@ -504,7 +504,6 @@ ul li a {
   margin-top: .5em;
   padding: .5em;
   text-align: center;
-  /* min-height: 100vh; */
   background-color: #d6ffd1;
   background-image: url('./bg\ pattern.png');
   background-blend-mode:screen;
@@ -543,7 +542,7 @@ ul li a {
 
 .testimonial-lists {
   width: 100%;
-  height: 45vh;
+  height: 200px;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
