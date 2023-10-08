@@ -148,7 +148,7 @@ ul li a {
 
 /* Home page */
 .homepage {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: black;
   margin: 0 .5em 0 .5em;
   padding: .5em;
