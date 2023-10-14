@@ -3,7 +3,11 @@
 const menu = document.querySelector('.menu');
 const link_items  = document.querySelector('.list-items');
 const progressEl = document.querySelector('.progress');
+const navBar = document.querySelector('.nav-bar');
+const barLink = document.querySelectorAll('.bar-link');
 const html = document.querySelector('html');
+const list_item = document.querySelectorAll('.list-item');
+
 
 // WORKING WITH TOGGLE MENU ICON
 menu.addEventListener('click', () => {
@@ -11,16 +15,20 @@ menu.addEventListener('click', () => {
   link_items.classList.toggle('hidden');
 })
 
+// list_item.forEach(lItem => {
+//   lItem.addEventListener('click', e => {
+//     const clicked = e.target.closest('.list-item');
+
+//     barLink.forEach(bLink => {
+//       bLink.classList.add('hidden');
+//     })
 
 
-// WORKING WITH LINK BAR
-
-link_items.addEventListener ('click', e => {
-  const clickss = e.target.closest('.list-item')
-  
-  if(!clickss) return;
-  document.querySelector(`.bar--${clickss.dataset.no}`).classList.toggle('hidden');
-});
+//     if(clicked) {
+//       document.querySelector(`.bar--${clicked.dataset.no}`).classList.remove('hidden');
+//     }
+//   })
+// })
 
 
 // WORKING WITH SCROLL BAR
@@ -29,7 +37,7 @@ const homePage = document.querySelector('.homepage');
 
 const conObFtn = function(entries) {
   const [entry] = entries;
-    console.log(entry)
+    // console.log(entry)
 
   if(!entry.isIntersecting) {
     container.classList.add('sticky-container')
@@ -221,7 +229,7 @@ const product_Links = document.querySelector('.product-links');
 
 product_Links.addEventListener('click', e => {
   const clicked = e.target.closest('.product-link');
-  console.log(clicked.dataset.tab)
+  // console.log(clicked.dataset.tab)
 
   // Removing active on all other Tab
   document.querySelectorAll('.product-link').forEach(pLink => {
@@ -270,7 +278,7 @@ const nslidess = function() {
     activetest = 0;
   } else {
     activetest++;
-    console.log(activetest, testimonial.length -1)
+    // console.log(activetest, testimonial.length -1)
   }
 
   culslide(activetest);

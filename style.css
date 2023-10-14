@@ -101,28 +101,43 @@ nav {
 }
 
 .list-item, .get-onboard {
-  margin: .5em 0 .5em .3em;
+  margin: .5em 0 .5em 0em;
   font-size: .9rem;
   font-weight: 600;
   color: white;
 }
-.bar-link {
-  background-color: white;
-  padding: .5em;
-  font-size: .8rem;
-}
 
-
-.bar-link ul li a {
-  margin-left: 1em;
-  margin-bottom: .5em;
-}
 li {
   list-style: none;
 }
 
 ul li a {
   text-decoration: none;
+}
+
+.bar-link {
+  background-color: white;
+  padding: .5em;
+  font-size: .8rem;
+}
+
+.bar-link li {
+  margin-bottom: 1em;
+}
+
+.bar-link li a {
+  color: green;
+  font-weight: lighter;
+  font-size: .9rem;
+}
+
+nav ul li ul {
+  position: relative;
+  display: none;
+}
+
+nav ul li:hover ul {
+  display: block;
 }
 
 /* Working with Progress */
@@ -870,6 +885,70 @@ ul li a {
 }
 
 @media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+  }
+  .nav-bar {
+    display:none;
+  }
+
+  .list-items {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 80%;
+    margin-right:  0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-item {
+    color:#14452F;
+    margin-right: 1em;
+    cursor: pointer;
+  }
+
+  .bar-link {
+    background-color: #eafcea;
+  }
+
+  nav ul li ul {
+    position: absolute;
+    top: 25px;
+    display: none;
+  }
+
+  nav ul li .arr-up {
+    display: none;
+  }
+
+  nav ul li:hover nav ul li .arr-up {
+    display: block;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+  }
+
+
+  .bar-link li {
+    margin-bottom: 1em;
+  }
+
+  .bar-link li a {
+    color: green;
+    font-weight: lighter;
+    font-size: .9rem;
+  }
+
   .homepage {
     padding: 1em 3em;
   }
@@ -986,6 +1065,7 @@ ul li a {
   .links {
     align-items: left;
   }
+
 }
 
 @media (min-width: 800px) {
